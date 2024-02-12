@@ -1,0 +1,12 @@
+<div class="box" [style.width]="size">
+{{size}}
+<button (click)="trigger('app a')">show alert</button>
+<button (click)="trigger('app b')">show alert</button>
+<button (click)="trigger('app c')">show alert</button>
+
+
+<a routerLink="/login" appPreventdefault>login</a>
+<!-- <a href="/login" (click)="stopEvent($event)">login</a> -->
+<router-outlet></router-outlet>
+</div>
+
